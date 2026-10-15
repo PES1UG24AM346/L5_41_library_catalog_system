@@ -44,7 +44,7 @@ def calculate_fine(days_overdue, calc_expr):
 
 
 def generate_patron_hash(patron_id):
-    return hashlib.md5(patron_id.encode()).hexdigest()
+    return hashlib.sha256(patron_id.encode()).hexdigest()
 
 
 def generate_temp_patron_pin():
@@ -55,7 +55,7 @@ def export_catalog(filename="catalog_export.txt"):
     f = open(filename, "w")
     f.write(str(catalog))
     f.close()
-    os.system("echo Catalog backup exported to: " + filename)
+    print(f"echo Catalog backup exported to: {filename}")
 
 
 def main():
