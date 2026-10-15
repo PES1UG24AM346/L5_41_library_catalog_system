@@ -1,0 +1,6 @@
+************* Module library_catalog_system
+library_catalog_system.py:116:0: C0304: Final newline missing (missing-final-newline)
+
+------------------------------------------------------------------
+Your code has been rated at 9.85/10 (previous run: 7.46/10, +2.39)
+

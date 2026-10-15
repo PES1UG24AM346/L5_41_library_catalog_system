@@ -1,0 +1,1 @@
+library_catalog_system.py:116:11: W292 no newline at end of file
